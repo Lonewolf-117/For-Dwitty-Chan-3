@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Romantic Page</title>
+    <style>
+        body {
+            background: url('https://example.com/romantic-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: #ff69b4;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #ff1493;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #ff69b4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background: #ff1493;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body style="background-color:lightskyblue  ;text-align:center">
+    <div class="container">
+        <h1 style="color: lightpink">I Love You :3</h1>
+        <font style="color: lightsalmon"> <p>You're my world, my only sunshine. You make me happy when you smile. Words can't express, babe, how much I love you. Always stay wimme!! :3.</p></font>
+        <a href="https://example.com/another-romantic-page" class="btn">Discover More</a>
+        <form action="https://example.com/send-message" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="message" rows="4" placeholder="Your Love Message" required></textarea>
+            <br><input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>

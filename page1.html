@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Note</title>
     <style>
+
         body {
             display: flex;
             justify-content: center;
@@ -53,8 +54,20 @@
             top: 0;
         }
     </style>
+<script>
+    document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+}
+</script>
 </head>
-<body>
+<body style="background-color:lightpink  ;text-align:center">
+
+<audio autoplay loop id="player">
+    <source src="thousand.m4a">
+</audio>
+
     <div class="container">
         <h1>To My Kitty-Cat :3</h1>
         <br>

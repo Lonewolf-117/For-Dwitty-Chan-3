@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+        .heart-icon {
+            font-size: 50px;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+    </style>
+    <script>
+      function solve() {
+
+var user = document.getElementById("username").value;
+var pass = document.getElementById("password").value;
+
+if (user == "dwittychan" && pass == "ilovedorithy") {
+    window.location.href = "page1.html"
+    return true
+}
+else {
+    alert("nopelol")
+    return false
+}
+
+}</script>
+</head>
+<body style="background-color:lightblue  ;text-align:center">
+    <div class="container">
+        <div class="heart-icon">❤️</div>
+        <h1>Login</h1>
+        <form action="">
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="reset" onclick="solve()" >Login</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Reasons You're the Best</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #ff6699;
+        }
+        p {
+            color: #333;
+        }
+        button {
+            background-color: #ff6699;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff3366;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body style="background-color:lightpink  ;text-align:center">
+    <div class="container">
+        <h1>Why You're the Best</h1>
+        <font color="#f08080" style="font-family: 'Lucida Console'" id="message">Click the button to see why you're the best!</font> <br>
+        <button onclick="showMessage()">Click Me</button>
+        <div class="image-container">
+            <img src="https://media.tenor.com/-FI5WRxJ23kAAAAj/peach-goma-love.gif" alt="Romantic Image">
+        </div>
+        <div class="footer">
+          <font style="color: hotpink"><b> Made for my cutie kitty cat :3 </b><br> Me wuvv voooooooooooooooo!!!!</font>
+        </div>
+    </div>
+
+    <script>
+        const messages = [
+            "You're so cute :3",
+            "You're so pretty :3",
+            "You're so beautiful :3",
+            "You have the bigggesttt heart :3",
+            "You make me smile :3",
+            "You're my princess :3",
+            "You're incredibly kind :3",
+            "You light up my life :3",
+            "You're amazing just the way you are :3",
+            "I love you more every day :3",
+            "You’re so precious :3",
+            "You’re my sunshine :3",
+            "You’re my everything :3",
+            "You’re so tasty :3",
+            "You’re so sexy :3",
+            "You’re my soulmate :3",
+            "You’re my dream come true :3",
+            "You’re my inspiration :3",
+            "You’re my forever love :3",
+            "You're the universe for me :3",
+            "You're the reason I wake up everyday :3",
+            "You've given me a new life :3",
+            "Your smile is like a drug to me :3",
+            "You're so gorgeous :3",
+            "I love youuuuuuuuuuuuu :33333333"
+        ];
+        let index = 0;
+
+        function showMessage() {
+            document.getElementById('message').innerText = messages[index];
+            index = (index + 1) % messages.length;
+        }
+    </script>
+</body>
+</html>

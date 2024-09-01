@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:3</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            padding: 50px;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #ff4d4d;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 2vw;
+            color: #ff4d4d;
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1vw;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Love Story</h1>
+    <div class="loader"></div>
+    <p>Loading our beautiful moments...</p>
+    <button onclick="revealMessage()">Click to Reveal a Surprise</button>
+    <div class="hidden-message" id="hiddenMessage">
+        <p>I can't actually believe we're separating. But promise me, mentally we'll always be as close as ever. You've given a new life. <br>
+        I wanna give you more of the physical gifts, but it'll be kind of hard. Soooo this website is kind of insane, thanks to moss. <br>
+        We can keep adding our memories here, even diaries! I think it's a really good way to feel close to each other. Oh and<br> not to forget imma keep adding cute secrets for you to find here :3 <br>
+        Love you <3</p>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

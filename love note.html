@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Note</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        p {
+            color: #333;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d4d;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 20px auto;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d4d;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+    </style>
+<script>
+    document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+}
+</script>
+</head>
+<body style="background-color:lightpink  ;text-align:center">
+
+<audio autoplay loop id="player">
+    <source src="thousand171.m4a">
+</audio>
+
+    <div class="container">
+        <h1>To My Kitty-Cat :3</h1>
+        <br>
+        <div class="heart"></div>
+        <br>
+        <p>You are the light of my life and the reason for my smile. I love you more than words can express.</p>
+    </div>
+</body>
+</html>

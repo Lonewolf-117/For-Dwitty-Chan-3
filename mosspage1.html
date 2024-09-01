@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message to My Best Friend</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-family: cursive;
+            font-size: 2.5vw;
+        }
+        p {
+            font-size: 1.6vw;
+            font-family: cursive;
+            color: white;
+        }
+        .heart {
+            color: #ff6f61;
+            font-size: 2em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }}
+    </style>
+
+<script>
+    document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+}
+</script>
+
+</head>
+<body>
+<audio autoplay loop id="player">
+    <source src="agreswbj.m4a">
+</audio>
+    <div class="container">
+        <h1>Comrade!</h1>
+        <p>You have always been a great friend, and I am genuinely surprised at all the shit you had in common. It's a shame that I won't see you for quite the time but what can we say, what needs to happen will happen so I will wait for the day I can and hope that whenever it comes we are better than today.<br>
+It's already so cringe af, I've never been one to do this emotional shit so spare any mistakes and I am pretty sure while you are reading it I am there wishing to disappear, so don't pay much attention to how I am acting rn. So I'll just say this, whatever time i spent with you and sierra were definetely among the best expiriences of my life and you are a great person, make sure to remainjust as you are rn and always be in good health.<br>
+Some dumbass said blood is thicker than water but that isn't the whole of it, the actual saying goes: "The blood of the convenant is thicker than water of the womb" Meaning the relations you areborn with are nothing compared to the bonds you make later in your life and from what I have seen it's most certainely true.<br>
+So I'll end it with wishing you goodluck for later in life and have a great time at your college.<br>
+Later Comrade,<br>
+and for fuck's sake don't say anything to me when you are done reading it.<br>
+Thank You. <br>
+</p>
+        <p class="heart">❤️</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+
+    <style>
+        body {
+            background-size: 100% 100%;
+    font-family: "Comic Sans MS", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-image: image("cat.jpg");
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li button:hover {
+    background-color: #e53935;
+}
+
+    </style>
+</head>
+<body background="pexels-pixabay-416160.jpg">
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <input type="text" id="new-task" placeholder="Add a new task...">
+        <button id="add-task">Add Task</button>
+        <b>
+        <ul id="task-list"><li>Hug Dorithy<button>Complete</button><button>Delete</button></li><li>Kiss Dorithy(left cheek)<button>Complete</button><button>Delete</button></li><li>Kiss Dorithy(right cheek)<button>Complete</button><button>Delete</button></li><li>Kiss Dorithy(forehead)<button>Complete</button><button>Delete</button></li><li>Kiss Dorithy(lips)<button>Complete</button><button>Delete</button></li></ul>
+</b>
+    </div>
+    <script src="todo.js"></script>
+
+</body>
+</html>

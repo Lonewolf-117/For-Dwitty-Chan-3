@@ -16,7 +16,7 @@ function solve() {
     var pass = document.getElementById("password").value;
 
     if (user === "dwittychan" && pass === "ilovedorithy") {
-        window.location = "love note.html"
+        window.location = "test.html"
     }
 
     if (user === "Toshio Furukawa" && pass === "405") {

@@ -72,7 +72,7 @@ function solve() {
         }
 
         else if (pass === "dorithychanlovesdwittychan"){
-            window.location = "love note.html"
+            window.location = "test.html"
         }
 
         else{

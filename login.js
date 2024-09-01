@@ -24,11 +24,11 @@ function solve() {
     }
 
     if (user === "sierra117" && pass === "ilovedwitty") {
-        window.location = "love note.html"
+        window.location = "test.html"
     }
     if (user === "kittycat") {
         if (pass === "dwittychanlovesdorithychan") {
-            window.location = "love note.html"
+            window.location = "test.html"
         }
         else if (pass === "dwittychan") {
             index = 1

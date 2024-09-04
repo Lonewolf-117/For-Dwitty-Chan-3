@@ -15,8 +15,8 @@ function solve() {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
 
-    if (user === "dwittychan" && pass === "ilovedorithy") {
-        window.location = "test.html"
+    if (user === "mossy2" && pass === "sungjinwoo") {
+        window.location = "memories.html"
     }
 
     if (user === "Toshio Furukawa" && pass === "405") {
@@ -24,7 +24,7 @@ function solve() {
     }
 
     if (user === "sierra117" && pass === "ilovedwitty") {
-        window.location = "test.html"
+        window.location = "come again later.html"
     }
     if (user === "kittycat") {
         if (pass === "dwittychanlovesdorithychan") {

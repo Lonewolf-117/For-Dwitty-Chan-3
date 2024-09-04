@@ -34,6 +34,7 @@
             position: relative;
             transform: rotate(-45deg);
             margin: 20px auto;
+            animation: beat 1s infinite;
         }
         .heart::before,
         .heart::after {
@@ -67,6 +68,13 @@
             font-size: 16px;
             transition: background-color 0.3s;
         }
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(-45deg);
+            }
         .button:hover {
             background-color: #ff6666;
         }
@@ -96,11 +104,11 @@ function musicPlay() {
             <a href="to-do.html" class="button">:3</a>
             <a href="quiz.html" class="button">:3</a><br>
             <a href="Quotes.html" class="button">:3</a>
-            <a href="https://example.com/romantic-page-6" class="button">:3</a>
-            <a href="https://example.com/romantic-page-7" class="button">:3</a>
-            <a href="https://example.com/romantic-page-8" class="button">:3</a><br>
-            <a href="https://example.com/romantic-page-9" class="button">:3</a>
-            <a href="https://example.com/romantic-page-10" class="button">:3</a>
+            <a href="tryst.html" class="button">:3</a>
+<!--            <a href="memories.html" class="button">:3</a>-->
+<!--            <a href="https://example.com/romantic-page-8" class="button">:3</a><br>-->
+<!--            <a href="https://example.com/romantic-page-9" class="button">:3</a>-->
+<!--            <a href="https://example.com/romantic-page-10" class="button">:3</a>-->
         </div>
     </div>
 </body>

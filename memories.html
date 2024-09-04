@@ -34,13 +34,59 @@
             gap: 10px;
         }
         .gallery img {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
         }
+        .image-slider {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    /*animation: slide 2s infinite;*/
+}
+
+/*.image-slider img:nth-child(1) {*/
+/*    animation-delay: 0s;*/
+/*}*/
+
+/*.image-slider img:nth-child(2) {*/
+/*    animation-delay: 1s;*/
+/*}*/
+
+
+/*@keyframes slide {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    !*5% {*!*/
+/*    !*    opacity: 1;*!*/
+/*    !*}*!*/
+/*    !*33.33% {*!*/
+/*    !*    opacity: 0;*!*/
+/*    !*}*!*/
+/*    !*66.66%{*!*/
+/*    !*    opacity: 1;*!*/
+/*    !*}*!*/
+/*    50%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
     </style>
 </head>
 <body style="background-color:lightcoral  ;text-align:center">
@@ -48,9 +94,16 @@
         <h1>Our Memories</h1>
         <div class="gallery">
             <img src="lo.jpeg" alt="Memory 1" onmouseover="this.src='lol.jpeg '" onmouseout="this.src='lo.jpeg '">
-            <img src="photo2.jpg" alt="Memory 2">
-            <img src="photo3.jpg" alt="Memory 3">
-            <img src="photo4.jpg" alt="Memory 4">
+            <img src="11.jpeg" alt="Memory hehehe" onmouseover="this.src='22.jpeg '" onmouseout="this.src='11.jpeg '">
+            <img src="far.jpeg" alt="Memory hehe" onmouseover="this.src='hug.jpeg '" onmouseout="this.src='far.jpeg '" onclick="this.src='clo.jpeg'">
+            <img src="r.jpeg" alt="r" onmouseover="this.src='l.jpeg '" onclick="this.src ='c.jpeg'" onmouseout="this.src='r.jpeg '">
+            <img src="t1.jpeg" onmouseover="this.src='t2.jpeg '" onmouseout="this.src='t1.jpeg '"alt="Memory 3">
+            <img src="t3.jpeg" onmouseover="this.src='t4.jpeg '" onmouseout="this.src='t3.jpeg '"alt="Memory 4">
+            <img src="t5.jpeg" onmouseover="this.src='t6.jpeg '" onmouseout="this.src='t5.jpeg'" onclick="this.src='t7.jpeg'" alt="Memory 5">
+            <img src="cc.jpeg" onmouseover="this.src='ccc.jpeg '" onmouseout="this.src='cc.jpeg'" onclick="this.src='cccc.jpeg'" alt="Memory 5">
+            <img src="regg.jpeg" onmouseover="this.src='reg.jpeg '" onmouseout="this.src='regg.jpeg'" onclick="this.src='kiss.jpeg'" alt="Memory 5">
+            <img src="eee.jpeg" onmouseover="this.src='mo.jpeg '" onmouseout="this.src='eee.jpeg'" onclick="this.src='kk.jpeg'" alt="Memory 5">
+
         </div>
     </div>
 </body>
